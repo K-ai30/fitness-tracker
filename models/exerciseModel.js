@@ -40,6 +40,6 @@ const exerciseSchema = new Schema({
     timestamps: true,
 });
 
-const Exercise = mongoose.model("Exercise", exerciseSchema);
+const Exercise = mongoose.model("Workout", exerciseSchema);
 
 module.exports = Exercise;

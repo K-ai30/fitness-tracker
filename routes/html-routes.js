@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = function(app) {
 // GET method route for index.html page
@@ -6,7 +6,7 @@ app.get('/', function (req, res) {
     // console.log(req);
     // console.log("hitting route!");
     // res.send('GET request to the homepage')
-    res.sendfile(path.join(__dirname, '../public/index.html'));
+    res.sendFile(path.join(__dirname, '../public/index.html'));
 })
 
 // Define a GET route for "/exercise" that sends back exercise.html
