@@ -21,7 +21,7 @@ app.use(express.static("public"));
 mongoose.connect(process.env.DB_URI || "mongodb://localhost/exercisedb", { useNewUrlParser: true });
 
 // If deployed, use the deployed database.  Otherwise use the local mongoHeadlines database
-var MONGODB_URI = process.env.DB_URI || "mongodb://localhost/mongoHeadlines";
+var DB_URI = process.env.DB_URI || "mongodb://localhost/mongoHeadlines";
 // Connect to the Mongo DB
 mongoose.connect(DB_URI);
 
